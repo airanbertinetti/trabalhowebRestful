@@ -1,0 +1,24 @@
+<div w3-include-html="menu.html"></div> 
+<h2></h2>
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel panel-heading">
+            <strong><h4>Incluíndo Tarefa para o aluno: {{ cliente.nome }}</h4></strong>
+        </div>
+        <div class="panel panel-body">
+            <form>
+                 <input type="hidden" name="id" id="id" />                
+                    <div class="form-group">
+                        <label for="comment"><h4>Escreva aqui a Tarefa:</h4></label>
+                        <textarea class="form-control" rows="1" id="comment" ng-model="tarefa.questao"></textarea>
+                    </div> 
+                      <label>Marcar como Rascunho <input type="checkbox" ng-model="tarefa.isRascunho"></label><br>
+                     
+                    <div class="text-right">
+                        <a href="#/!" class="btn btn-default">Cancelar</a>
+                        <input type="submit" ng-click="submitForm()" value="Gravar" class="btn btn-success"/>
+                    </div>
+            </form> 	
+        </div>
+    </div>
+</div>

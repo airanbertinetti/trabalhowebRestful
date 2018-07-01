@@ -1,0 +1,40 @@
+<div w3-include-html="menu.html"></div> 
+    <h2></h2>
+        <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel panel-heading">
+                        <strong><h4>Lista de Alunos</h4></strong>
+                    </div>
+                    <h2></h2>
+                    <div class="panel panel-body">
+                        <table id="tabClientes" class="table table-condensed table-striped">
+                                <div class="btn-group"> 
+                                        <div class="form-group">
+                                              <input type="text" class="form-control" placeholder="Pesquisar" ng-model="busca.$">
+                                            </div>                                           
+                                        </form>
+                                      </div>
+                           
+                            <thead class="text-center">
+                                <th>Nome:</th>
+                                <th>Turma:</th>                               
+                                <th><a href="#!inserir" class="btn btn-success">Inserir Aluno</a></th>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="x in clientes | filter:busca:strict">
+                                    <td>{{ x.nome }}</td>
+                                    <td>{{ x.turma }}</td>
+                                    <td>
+                                        <a ng-href="#!criarTarefa/{{x._id}}" class='btn btn-primary'>Criar Tarefas</a> 
+                                        <a ng-href="#!listarTarefas/{{x._id}}" class='btn btn-info'>Listar Tarefa</a> 
+                                        <a ng-href="#!alterar/{{x._id}}" class='btn btn-default'>Alterar</a> 
+                                        <a href="" ng-click='delete(x._id)' class='btn btn-danger'>Deletar</a> 
+                                    </td>
+                                </tr>
+                            </tbody>                 
+        
+                        </table>
+                    </div>
+                </div>
+            </div>
+       
