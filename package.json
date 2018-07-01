@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/airanbertinetti/trabalhowebmvc.git"
+    "url": "git+https://github.com/airanbertinetti/trabalhowebRestful.git"
   },
   "author": "Airan Bertinetti dos Santos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/airanbertinetti/trabalhowebmvc/issues"
+    "url": "https://github.com/airanbertinetti/trabalhowebRestful/issues"
   },
-  "homepage": "https://github.com/airanbertinetti/trabalhowebmvc#readme",
+  "homepage": "https://github.com/airanbertinetti/trabalhowebRestful#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
