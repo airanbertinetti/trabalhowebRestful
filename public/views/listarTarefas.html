@@ -23,11 +23,14 @@
                             <tbody>
                                 <tr ng-repeat="x in tarefas | filter:busca:strict">
                                     <td>{{ x.questao }}</td>
-                                    <td>{{ x.clienteID }}</td>
+                                    <!-- <td>{{ x.clienteID }}</td> -->
                                     <td>
                                         <!-- <a ng-href="#!criarTarefa/{{x._id}}" class='btn btn-primary'>Criar Tarefas</a>  -->
+                                        
                                         <a ng-href="#!alterar/{{x._id}}" class='btn btn-default'>Alterar</a> 
+                                        <a ng-href="#!alterar/{{x._id}}" class='btn btn-default'>Acrescentar Questões</a> 
                                         <a href="" ng-click='delete(x._id)' class='btn btn-danger'>Deletar</a> 
+                                        
                                     </td>
                                 </tr>
                             </tbody>                 
